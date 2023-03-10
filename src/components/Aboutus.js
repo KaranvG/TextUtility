@@ -1,4 +1,4 @@
-import React, { useState } from "react";    
+import React, { useState } from "react";
 
 export default function Aboutus(props) {
   const [myStyle, setMyStyle] = useState({
@@ -11,7 +11,7 @@ export default function Aboutus(props) {
     if (myStyle.color === "black") {
       setMyStyle({
         color: "white",
-        backgroundColor: "black",
+        backgroundColor: "#37306B",
         border: "0.5px solid white",
       });
       setBtnText("Enable Light Mode");
@@ -49,7 +49,11 @@ export default function Aboutus(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={myStyle}>
-              <strong> Using UpperCase, we will convert the text data in uppercase format. </strong>
+              <em>
+                {" "}
+                Using UpperCase, we will convert the text data in uppercase
+                format.{" "}
+              </em>
             </div>
           </div>
         </div>
@@ -65,7 +69,7 @@ export default function Aboutus(props) {
               style={myStyle}
             >
               Lowercase
-              </button>
+            </button>
           </h2>
           <div
             id="collapseTwo"
@@ -74,8 +78,11 @@ export default function Aboutus(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={myStyle}>
-              <strong> Using Lowercase, we will convert the text data in lowercase format. </strong>
-              
+              <em>
+                {" "}
+                Using Lowercase, we will convert the text data in lowercase
+                format.{" "}
+              </em>
             </div>
           </div>
         </div>
@@ -100,8 +107,7 @@ export default function Aboutus(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={myStyle}>
-              <strong> Using clear, we clear the textbox.</strong> 
-              
+              <em> Using clear, we clear the textbox.</em>
             </div>
           </div>
         </div>
