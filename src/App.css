@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.icon.icon-sun{
+  display: block;
+  background: none;
+}
+.icon.icon-moon{
+  display:block;
+  background: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.comment {
+  background-color: red;
+  color: yellow;
+}
+/* 1 btn-danger css  */
+.btn-danger {
+  border: none;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background: #e11223; */
+  border-radius: 0;
+  min-width: 200px;
+  color: #fff;
+  z-index: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.btn-danger::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -50px;
+  width: 150%;
+  height: 100%;
+  background: #180a57;
+  transition: all 0.7s ease-in-out;
+  z-index: -1;
+  transform: translateX(-350px) skew(-20deg);
+}
+
+.btn-danger:hover::before {
+  /* transform: translateX(20px) skew(20deg); */
+  transform: translateX(20px) skew(20deg);
+}
+
+/* 2 btn-info css */
+
+.btn-info {
+  border: none;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background: #e11223; */
+  border-radius: 0;
+  min-width: 200px;
+  color: #fff;
+  z-index: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.btn-info::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -50px;
+  width: 150%;
+  height: 100%;
+  background: #e0087f;
+  text-transform: uppercase;
+  transition: all 0.7s ease-in-out;
+  z-index: -1;
+  transform: translateX(-350px) skew(-20deg);
+}
+
+.btn-info:hover::before {
+  /* transform: translateX(20px) skew(20deg); */
+  transform: translateX(150px) skew(20deg);
+}
+
+/* 3 btn-sucess css */
+.btn-success {
+  border: none;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background: #e11223; */
+  border-radius: 0;
+  min-width: 200px;
+  color: #fff;
+  z-index: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.btn-success::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -50px;
+  width: 150%;
+  height: 100%;
+  background: #e16709;
+  transition: all 0.7s ease-in-out;
+  z-index: -1;
+  transform: translateX(-300px) skew(-20deg);
+}
+.btn-success:hover::before {
+  /* transform: translateX(20px) skew(20deg); */
+  transform: translateX(-140px) skew(120deg);
+}
